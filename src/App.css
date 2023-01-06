@@ -1,5 +1,9 @@
+:root {
+  --primary-color: rgb(97, 41, 114);
+}
+
 .App {
-  text-align: center;
+  padding: 5vh;
 }
 
 .App-logo {
@@ -35,4 +39,56 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.fieldset {
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.fieldset__legend {
+  float: initial;
+  width: auto;
+  color: var(--primary-color);
+  padding-right: 5px;
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+.contact:nth-child(2) {
+  border-top: none;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 5px;
+  border-top: 1px solid var(--primary-color);
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+.contact__info {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.contact__icon {
+  cursor: pointer;
+  color: #00b342;
+  margin: auto;
+}
+
+.contact__icon--desconectado {
+  cursor: pointer;
+  color: #282c34;
+}
+
+.contact__action {
+  margin: auto;
 }
